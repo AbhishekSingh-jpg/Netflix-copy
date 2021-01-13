@@ -1,0 +1,214 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+body{
+    background-color: #000;
+    color:#999;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image:url(Images/Netflix-Background.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:93vh;
+    
+}
+
+header::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content:'';
+    width:100%;
+    height:93vh;
+    background-color:rgba(0,0,0,.6);
+    z-index:1;
+    box-shadow: inset 120px 100px 250px #000,inset -120px -100px 250px #000;
+}
+.head{
+    position:relative;
+    height:70px;
+    z-index:2;
+  
+}
+.logo{
+    position:absolute;
+    width:150px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   
+    
+}
+.btn{
+    text-decoration:none;
+    font-weight:bold;
+    display: inline-block;
+    background-color: #e50914;
+    color:white;
+    border-radius:5px;
+    padding:0.5rem 1rem;
+}
+.btn:hover{
+    opacity:0.6
+}
+.btn-xl{
+    font-size:2.5rem;
+    padding:1.5rem 2rem;
+}
+.head a{
+    position:absolute;
+    top:50%;
+    right:2.5%;
+    transform:translateY(-50%);
+    
+}
+.hcontent{
+    position: relative;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height:80vh;
+}
+.hcontent h1{
+    padding:1rem 0;
+    font-size:5.5rem;
+    z-index:2;
+}
+.hcontent p{
+    padding:1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index:2;
+}
+.hcontent a{
+    z-index:2;
+}
+.mid-sec{
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:1rem 0;
+
+}
+.midd{
+    
+    width:50%;
+    margin:auto;
+}
+.midd:hover{
+    border-bottom: 2px solid #e50914;
+    border-radius: 2px;
+    color:white;
+
+}
+.midp{
+    padding:0.5rem 0;
+    
+}
+.btm-sec-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin:1rem auto;
+}
+.btm-sec-1 img{
+    width:50%;
+}
+.btm-sec-1 div:first-child{
+    text-align:left;
+}
+#seperator{
+    padding:1rem;
+}
+.btm-sec-2 img{
+    width:50%;
+}
+.btm-sec-2{
+    
+    width:70%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    padding:1rem 0 1rem 0;
+}
+
+.buyopt{
+    width:70%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    align-items: center;
+    grid-gap:1rem;
+    margin-top: 1rem;
+}
+.buyopt p{
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+.buyopt a{
+    width:55%
+}
+
+.table table{
+    margin:auto;
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+}
+
+.table table tr:nth-child(even){
+    background-color: #999;
+    color:white
+}
+.table table tbody tr td:first-child{
+    text-align: left;
+}
+.table table td,.table table th{
+    padding:1rem;
+    
+}
+
+.footer-cols{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    text-align: left;
+    
+}
+footer {
+    width:70%;
+    margin:2rem auto 0 auto;
+    text-align: left;
+}
+footer a{
+    text-decoration: none;
+    color:#999;
+    
+}
+footer ul{
+    list-style-type: none;
+    text-align: left;
+    line-height: 1.5;
+}
+#questions{
+    margin-bottom: 1rem;
+}
